@@ -89,11 +89,11 @@ float LinuxParser::MemoryUtilization()
     {
       std::istringstream linestream(line);
       linestream >> key >> value;
-      if (key == "Total Memory:") 
+      if (key == "MemTotal:") 
       {
         Total_memory = stof(value);
       }
-      if (key == "Free Memory:") 
+      if (key == "MemFree:") 
       {
         Free_memory = stof(value);
       }
